@@ -35,9 +35,15 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 
     <h1>Cadastrar Produto</h1>
     <form action="cadastro.produtos.php" method="POST">
-        <label for="id_do_produto">Sabor da Pizza</label>
-        <input type="text" id="id_do_produto" name="id_do_produto" required><br>
+        <label for="id_do_produto">Nome Produto:</label>
+        <input type="text" id="id_do_produto" name="quantidade" required><br>
 
-        <button type="submit">Cadastrar Pizza</button>
+        <label for="quantidade">Quantidade:</label>
+        <input type="text" id="quantidade" name="quantidade" required><br>
+
+        <label for="subtotal">Preço Unitário:</label>
+        <input type="text" id="subtotal" name="subtotal" required><br>
+
+        <button type="submit">Cadastrar Produto</button>
     </form>
     
