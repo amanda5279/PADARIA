@@ -4,18 +4,18 @@ include 'padaria.sql';
 
 if($_SERVER['REQUEST_METHOD']=="POST"){
 
-    $nome_cliente = $_POST['nome_cliente'];
-    $telefone_cliente = $_POST['telefone_cliente'];
-    $endereco_cliente = $_POST['endereco_cliente'];
+    $nome_cliente = $_POST['nome'];
+    $telefone_cliente = $_POST['telefone'];
+    $endereco_cliente = $_POST['endereco'];
 
-    $sql = "INSERT INTO clientes (nome_cliente,telefone_cliente,endereco_cliente) VALUES (:nome_cliente,
-    :telefone_cliente, :endereco_cliente)";
+    $sql = "INSERT INTO comprador (nome,telefone,endereco) VALUES (:nome,
+    :telefone, :endereco)";
 
     $stmt =  $conn->prepare($sql);
 
-    $stmt->bindParam(':nome_cliente',$nome_cliente);
-    $stmt->bindParam(':telefone_cliente',$telefone_cliente);
-    $stmt->bindParam(':endereco_cliente',$endereco_cliente);
+    $stmt->bindParam(':nome',$nome);
+    $stmt->bindParam(':telefone',$telefone);
+    $stmt->bindParam(':endereco',$endereco);
 
     $stmt->execute();
 
@@ -29,7 +29,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrar Cliente - Pizzaria</title>
+    <title>Cadastro Compradores</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
