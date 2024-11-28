@@ -23,7 +23,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     exit;
 }
 
-$sql = "SELECT * from clientes";
+$sql = "SELECT * from comprador";
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 $clientes = $stmt->fetchAll();
