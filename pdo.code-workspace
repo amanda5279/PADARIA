@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "../../pdo"
+		},
+		{
+			"path": "../../queryobject"
+		},
+		{
+			"path": "../../CompositorioPattern"
+		},
+		{
+			"path": "../../factory_pattern"
+		},
+		{
+			"path": "../../ESTUDOSAEP"
+		},
+		{
+			"path": "../../concessionario"
+		},
+		{
+			"path": "../../AMANDIS"
+		},
+		{
+			"path": "../../FORMULARIO"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
